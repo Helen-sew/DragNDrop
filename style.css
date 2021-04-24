@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+.empty {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-color: #fff;
+  border: solid 3px #ffabe1;
+}
+
+.fill {
+  background-image: url('https://source.unsplash.com/random/150x150');
+  width: 145px;
+  height: 145px;
+  cursor: pointer;
+}
+
+/*to add border when is on hold */
+.hold {
+  border: solid 5px #a685e2;
+}
+
+/* to add style when dragover the empty boxes*/
+.hovered {
+  background-color: #6155a6;
+  border: dashed 3px #fff;
+}
